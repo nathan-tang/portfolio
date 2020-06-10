@@ -1,22 +1,38 @@
-#homepage-jumbotron {
-}
-
 .homepage-h3 {
   padding-top: 40vh;
   font-size: 42px;
 }
 
-.homepage-h1, .homepage-h3, .homepage-h5 {
-  text-align: center;
-}
-
 .homepage-footer {
-  position: absolute;
   bottom: 0;
+  margin-top: 150px;
   margin-left: 20px;
-  margin-bottom: 20px;
 }
 
-.typerwriter-test {
-  text-align: center;
+.homepage-typewriter {
+  padding-bottom: 40vh;
+}
+
+.homepage-arrow-div {
+  padding-bottom: 10vh;
+}
+
+#homepage-arrow {
+  font-size: 42px;
+  transition: ease 0.5s;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.homepage-cards {
+  width: 120rem;
+}
+
+.homepage-card {
+  margin: 0 20px;
 }

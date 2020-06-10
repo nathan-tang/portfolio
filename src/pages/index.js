@@ -1,17 +1,20 @@
 import React from "react";
-import "./css/index.css";
 import Typewriter from 'typewriter-effect';
-// import { Link } from "gatsby";
+//import { Link } from "gatsby";
+import SEO from "../components/seo";
+
+import "./css/index.css";
+import "./css/global.css";
 //
 // import Layout from "../components/layout";
 // import Image from "../components/image";
-// import SEO from "../components/seo";
 
 const IndexPage = () => (
     <div>
-        <h3 className="homepage-h3"> Hey, I'm Nathan! </h3>
+        <SEO title="Homepage"/>
+        <h3 className="homepage-h3 align-center"> Hey, I'm Nathan! </h3>
 
-        <div className="typerwriter-test">
+        <div className="homepage-typewriter align-center">
             <Typewriter
                 options={{
                     strings: ['Under construction again!',
@@ -29,8 +32,35 @@ const IndexPage = () => (
             />
         </div>
 
+        <div className="homepage-arrow-div align-center">
+            <i className="fas fa-angle-down" id="homepage-arrow"></i>
+        </div>
+
+        <div className="homepage-cards container align-center">
+            <div className="row">
+                <div className="col homepage-card card">
+                    <div className="card-body">
+                        <h5 className="card-title">Test Title</h5>
+                        <p className="card-text">Lorem ipsum</p>
+                    </div>
+                </div>
+                <div className="col homepage-card card">
+                    <div className="card-body">
+                        <h5 className="card-title">Test Title</h5>
+                        <p className="card-text">Lorem ipsum</p>
+                    </div>
+                </div>
+                <div className="col homepage-card card">
+                    <div className="card-body">
+                        <h5 className="card-title">Test Title</h5>
+                        <p className="card-text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer className="homepage-footer">
-            <h5 className="homepage-h5"> ❤ Nathan </h5>
+            <h5 className="homepage-h5"> Made with ❤ in Irvine, CA </h5>
         </footer>
     </div>
   // <Layout>
@@ -41,7 +71,6 @@ const IndexPage = () => (
   //   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
   //     <Image />
   //   </div>
-  //   <Link to="/page-2/">Go to page 2</Link> <br />
   //   <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   // </Layout>
 );
