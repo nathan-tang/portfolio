@@ -1,26 +1,49 @@
-.homepage-h3 {
-  padding-top: 40vh;
-  font-size: 42px;
+.nav-bar {
+  position: sticky;
+  top: 0;
 }
 
-.homepage-footer {
-  bottom: 0;
-  margin-top: 150px;
-  margin-left: 20px;
+.nav-button {
+  padding: 20px 0 0 20px;
+  font-size: 36px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.nav-button:hover {
+  opacity: 0.5;
+}
+
+.homepage-h3 {
+  padding-top: 30vh;
 }
 
 .homepage-typewriter {
-  padding-bottom: 40vh;
+  padding-bottom: 5vh;
 }
 
-.homepage-arrow-div {
-  padding-bottom: 10vh;
+.homepage-socials i {
+  margin: 0 3vh 20vh 3vh;
+  transition: ease 0.3s;
 }
+
+.homepage-socials a,
+.homepage-socials a:visited,
+.homepage-socials i:active {
+  color: black;
+  cursor: pointer;
+}
+
+.homepage-socials i:hover {
+    opacity: 0.5;
+}
+
 
 #homepage-arrow {
   font-size: 42px;
   transition: ease 0.5s;
   animation: bounce 3s infinite;
+  padding-bottom: 30vh;
 }
 
 @keyframes bounce {
@@ -29,10 +52,71 @@
   100% { transform: translateY(0); }
 }
 
+.homepage-container {
+  max-width: 850px;
+  padding-bottom: 2rem;
+}
+
+.homepage-container ul li {
+  margin-bottom: 1px;
+}
+
+.homepage-experience {
+  display: grid;
+  grid-auto-columns: 50% 50%;
+}
+
+.homepage-experience-company {
+  grid-column: 1;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.homepage-experience-date {
+  grid-column: 2;
+  margin: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+  .homepage-experience {
+    margin: 0;
+    display: block;
+  }
+  .homepage-experience-company {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .homepage-experience-date {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+.homepage-experience-title {
+  margin-bottom: 10px;
+}
+
+.workaround {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.card {
+  width: 300px;
+}
+
 .homepage-cards {
-  width: 120rem;
+  width: 35rem;
 }
 
 .homepage-card {
   margin: 0 20px;
 }
+
+.homepage-footer {
+  bottom: 0;
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
