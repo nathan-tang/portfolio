@@ -1,72 +1,51 @@
-#xo ~ * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#xo {
+.game-board {
     display: grid;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    /* align-items: center; */
-    padding: 2rem;
+    grid-template-columns: auto 2rem 2rem 2rem 2rem 2rem auto;
+    grid-template-rows: auto 2rem 2rem 2rem 2rem 2rem auto;
+    grid-gap: 1rem;
 }
 
-#xo h1 {
-    margin: 2rem;
+.game-board button {
+    height: 100%;
 }
 
-.board {
-    border: 1rem solid white;
-    outline: none;
-    background: black;
-    width: 500px;
-    height: 500px;
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    gap: 0.7rem;
+.game-board-row-two {
+    grid-row: 2
 }
 
-.squares {
-    background: white;
-    border: none;
-    font-size: 5rem;
-    /* font-weight: 800; */
-    cursor: pointer;
-    outline: none;
+.game-board-row-three {
+    grid-row: 3;
 }
 
-.X {
-    color: black;
-}
-.O {
-    color: black;
+.game-board-row-four {
+    grid-row: 4;
 }
 
-.info-wrapper {
-    display: flex;
-    justify-content: space-between;
+.game-board-row-five {
+    grid-row: 5;
 }
 
-#xo h3 {
-    padding: 1rem;
+.game-board-row-six {
+    grid-row: 6;
 }
 
-#xo li {
-    list-style: none;
+.game-board-col-two {
+    grid-column: 2;
 }
 
-.text-center button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    margin: 0.5rem 1rem;
+.game-board-col-three {
+    grid-column: 3;
 }
 
-.credit {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 12px;
+.game-board-col-four{
+    grid-column: 4;
 }
+
+.game-board-col-five {
+    grid-column: 5;
+}
+
+.game-board-col-six {
+    grid-column: 6;
+}
+

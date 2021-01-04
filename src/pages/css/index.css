@@ -91,6 +91,9 @@
     display: inline-block;
     margin-bottom: 5px;
   }
+  .card {
+    margin: auto auto 15px auto;
+  }
 }
 
 .homepage-experience-title {
@@ -120,3 +123,16 @@
   margin-left: 20px;
 }
 
+.home-page-feature  {
+  display: flex;
+  flex-flow: column;
+}
+
+#card-xo, #card-rc {
+  transition: ease-in-out 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.1255) !important;
+}
+
+#card-xo:hover, #card-rc:hover {
+  transform: scale(1.1);
+}
