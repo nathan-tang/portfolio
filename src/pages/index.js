@@ -1,24 +1,31 @@
 import React, {useState}  from "react";
 import Typewriter from 'typewriter-effect';
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import SEO from "../components/seo";
 import { navigate } from "gatsby";
 
 // IMAGES
-import Background from "../images/train_station/background (v2.3).svg"
-import Foreground from "../images/train_station/Foreground (v2.3).svg"
-import BackgroundCeilingPanel from "../images/train_station/Foreground Column(v1.4).svg"
-import HackUCILogo from "../images/white-anteater-logo-vectorized.svg";
-import HackUCISiteLogo from "../images/2018-09-15-Logo-transparent.png";
-import X from "../images/x.svg";
+import Background from "../images/Background (v2.3).svg"
+import Foreground from "../images/Foreground (v2.3).svg"
+import BackgroundCeilingPanel from "../images/Foreground Column(v1.4).svg"
 
 // CSS
-import "./css/index.scss";
+import "./css/index.css";
 import "./css/global.css";
 
 // Components
 import HomepageExperience from "../components/homepage-experience";
 //import ProjectCard from "../components/project-card"
+
+function TextIndexPage(props) {
+    return (
+        <div>
+            <img style={{position: "absolute", left: "25%", width: "50%"}} src={Background} alt="background"/>
+            <img style={{position: "absolute", top: "15%", left: "25%", width: "50%"}} src={Foreground} alt="background"/>
+            <img style={{position: "absolute", width: "50%", height: "50%", right: "10%"}} src={BackgroundCeilingPanel} alt="backgroundCeiling"/>
+        </div>
+    )
+}
 
 function IndexPage(props) {
     const [state] = useState({
@@ -66,24 +73,31 @@ function IndexPage(props) {
             </div>
 
             <div className="container homepage-container">
-                <h2> Featured Work </h2>
-                <a href="https://www.hackuci.com">
-                    <div className="featured featured-hackuci">
-                        <img src={HackUCILogo} className="featured-background" alt="hackathon-site-logo"/>
-                        <label> HackUCI 2021 </label>
+                <h2> Projects </h2>
+                <div className="card-deck">
+                    <div id="card-xo" className="card" onClick={() => {navigate('/xo')}}
+                         role="presentation" style={{cursor: "pointer"}}>
+                        <div className="card-body text-center">
+                            <p className="card-text">Unfair Tic-Tac-Toe</p>
+                        </div>
                     </div>
-                </a>
-                <a href="https://hack.ics.uci.edu">
-                    <div className="featured featured-hacksite">
-                        <img src={HackUCISiteLogo} className="featured-background" alt="club-site-logo"/>
-                        <label> Hack Club Site </label>
+                    <div id="card-rc" className="card" onClick={() => {navigate("https://github.com/nathan-tang/sdhacks2019")}}
+                         role="presentation" style={{cursor: "pointer"}}>
+                        <div className="card-body text-center">
+                            <p className="card-text">Recycle Cam (Github)</p>
+                        </div>
                     </div>
-                </a>
-                <Link to="/xo">
-                    <div className="featured featured-xo border">
-                        <label> Unfair Tic-Tac-Toe </label>
+                    <div className="card bg-success" style={{cursor: "no-drop"}}>
+                        <div className="card-body text-center">
+                            <p className="card-text">Spotify API Project (WIP)</p>
+                        </div>
                     </div>
-                </Link>
+                    <div className="card bg-danger" style={{cursor: "no-drop"}}>
+                        <div className="card-body text-center">
+                            <p className="card-text">Under Construction</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="container homepage-container">
@@ -109,19 +123,13 @@ function IndexPage(props) {
             <div className="container homepage-container align-left">
                 <h2> Experience </h2>
                 <HomepageExperience company="UCI Student Affairs IT" date="February 2020 - Present"
-                                    title="Student Web Developer" points={[
-                    'Launched large-scale orientation web application that will serve every incoming student at UCI.',
-                    'Constructing Responsive Web Applications with PHP-Laravel, Vue.js, and MySQL.',
-                    'Experienced in Vuex-ORM, Laravel Eloquent Relationships, and Full-Stack Development.',
-                    'Following Agile-Scrum Software Development.']}/>
-                <HomepageExperience company="Hack at UCI" date="April 2020 - Present"
-                                    title="Tech Organizer" points={['Constructed multiple club sites with own focus on the ReactJS frontend.',
-                    'Developed incrementally in a team setting using Github and Heroku development environment.',
-                    'Organized and hosted large-scale online hackathon events.']}/>
+                                    title="Student Web Developer" points={['Following Agile-Scrum Software Development',
+                    'Constructing Responsive Web Applications with PHP-Laravel, Vue.js, and MySQL',
+                    'Experience! in Vuex-ORM, Laravel Eloquent Relationships, and Full-Stack Development']}/>
                 <HomepageExperience company="LA-Tronics Inc." date="June 2019 - July 2019"
-                                    title="Intern" points={['Utilized Microsoft Excel to manage and document incoming hardware.',
-                    'Shadowed superior in the process of E-commerce: monitoring of inventory and sales via eBay.',
-                    'Partitioned and wiped SSDs and HDDS in preparation to be sold.']}/>
+                                    title="Intern" points={['Worked independently in Inventory Branch','Used Microsoft Excel to manage and document incoming hardware',
+                    'Shadowed superior in the process of E-commerce: monitoring of inventory and sales via eBay',
+                    'Partitioned and wiped SSDs and HDDS in preparation to be sold']}/>
             </div>
 
             <div className="align-center" style={{opacity: "50%", padding: "0 0 30px 0"}}>
@@ -135,7 +143,7 @@ function IndexPage(props) {
     )
 }
 
-export default IndexPage;
+export default TextIndexPage;
 
 
 // <Layout>
