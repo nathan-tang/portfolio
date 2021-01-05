@@ -126,6 +126,7 @@ function IndexPage(props) {
 
             <div className="align-center" style={{opacity: "50%", padding: "0 0 30px 0"}}>
                 <i> More stuff on the way! </i>
+                <i> sneak peek: "🚂" </i>
             </div>
 
             <footer className="homepage-footer">
