@@ -1,6 +1,7 @@
 import React from "react";
 import SwitchThemeButton from "../components/SwitchThemeButton";
 import Typewriter from 'typewriter-effect';
+import SEO from "../components/SEO";
 
 import Drawing from "../images/meandpokemon.png"
 
@@ -36,6 +37,7 @@ function WorkExperience(props) {
 function IndexPage() {
   return (
       <div className="dark:bg-neutral-900 w-auto h-auto">
+        <SEO title="nathantang.me"/>
         <header className="relative w-full h-16">
             <div className="fixed h-20 z-40 w-full flex justify-between backdrop-blur-[20px] backdrop-saturate-150 bg-white/50 dark:bg-neutral-900/50">
                 <nav class="w-full sm:max-w-[75ch] m-auto flex px-5 justify-between items-center ">
@@ -101,7 +103,7 @@ function IndexPage() {
                     points={[
                         "Coordinated closely with 4 other developers, business, product, and UI teams to build mobile applications",
                         "Implemented mobile product using React Native, Google Firebase and Git.",
-                        "Oversawed and executed on the building of internal Python Selenium web-scrapers.",
+                        "Overseen and executed on the building of internal Python Selenium web-scrapers.",
                     ]}
                 />
                 <br/>
