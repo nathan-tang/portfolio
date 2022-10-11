@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknathantang_me=self.webpackChunknathantang_me||[]).push([[218],{2513:function(e,t,n){n.r(t);var a=n(7294),l=n(1082);t.default=function(){return a.createElement("div",null,a.createElement("div",{className:"align-center"},a.createElement("h3",{className:"homepage-h3"}," ERROR 404: Not Found "),a.createElement("p",null," You don't have to go home, but you can't stay here. "),a.createElement(l.Link,{to:"/"}," Return Home ")))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-bc9c87af4dcf84888d24.js.map
