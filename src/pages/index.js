@@ -55,11 +55,11 @@ function IndexPage() {
                             wrapperClassName: "dark:text-white text-1xl",
                             delay: 30,
                             strings: [
-                                'Full-time Software Engineer 💻',
-                                'Part-time Illustrator 🎨',
-                                'Full-time Clown 🤡',
-                                'Interested in Frontend/UI Engineering 💻',
-                                'Interested in Indie Game Development 🎮'
+                                'Full-time Software Engineer',
+                                'Part-time Illustrator',
+                                'Full-time Clown',
+                                'Interested in Frontend/UI Engineering',
+                                'Interested in Indie Game Development'
                             ],
                             autoStart: true,
                             loop: true,
@@ -72,7 +72,9 @@ function IndexPage() {
                 <img alt="drawing of developer with their favorite pokemon" src={Drawing}/>
 
                 <br/>
-
+                <hr/>
+                <br/>
+                
                 <h3 className="dark:text-white text-2xl"> Experience </h3>
                 <br/>
                 <WorkExperience 
@@ -88,7 +90,7 @@ function IndexPage() {
                     startDate="Feb 2020"
                     endDate="Jun 2022"
                     points={[
-                        "Led development of single-page web applications that served ~10,000 students, volunteers and staff each",
+                        "Led development of single-page web applications that each served ~10,000 students, volunteers and staff",
                         "Reduced time greatly for registration and customer support with creation of admin-side control pane which implemented QR-code camera scanning, search, data visualization, record editing, and more.",
                         "Scaled PHP/Laravel backend via test-driven development, api controllers, models and command line scripts.",
                         "Technologies: VueJS, PHP/Laravel, MySQL, Git, AWS"
@@ -107,7 +109,8 @@ function IndexPage() {
                     ]}
                 />
                 <br/>
-
+                <hr/>
+                <br/>
                 <h3 className="dark:text-white text-2xl"> Current Project </h3>
                 <br/>
                 <WorkExperience 
@@ -121,6 +124,21 @@ function IndexPage() {
                         "Contributed regularly to system design meetings and led development on components, middleware auth, and more",
                     ]}
                 />
+                <br/>
+                <hr/>
+                <br/>
+                <section>
+                    <h3 className="dark:text-white text-2xl"> Current Hyperfixations </h3>
+                    <ul className="mt-4 text-sm dark:text-white">
+                        <li className="ml-4 list-disc"><a href="https://cyberpunk.fandom.com/wiki/Cyberpunk_Wiki">
+                            Mike Pondsmith's Cyberpunk Universe ↗
+                        </a></li>
+                        <li className="ml-4 list-disc"><a href="https://www.google.com/books/edition/The_Myth_of_Sisyphus/zG9wDwAAQBAJ">
+                            The Myth of Sisyphus by Albert Camus ↗ 
+                        </a></li>
+                    </ul>
+                </section>
+
                 <br/>
 
                 <footer className="dark:text-white">
